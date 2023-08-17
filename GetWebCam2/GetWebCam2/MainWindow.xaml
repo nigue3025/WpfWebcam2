@@ -1,0 +1,38 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:GetWebCam2"
+        xmlns:Public="clr-namespace:Camera_NET.Public;assembly=Camera_NET" x:Class="GetWebCam2.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="869.595" Width="1138.514" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="772*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <ComboBox x:Name="cmbx_devices"/>
+            <Button x:Name="btn_init" Click="btn_init_Click" Content="init" Height="50"/>
+            <Button x:Name="btn_capture" Click="btn_capture_Click"  Content="capture" Height="50"/>
+            <Button x:Name="btn_inference" Click="btn_inference_Click"  Content="live inference" Height="50"/>
+            <Button x:Name="btn_closeCamera" Click="btn_closeCamera_Click"  Content="close camera" Height="50"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="URL"/>
+                <TextBox x:Name="txtbx_url" Width="1000" Text="http://127.0.0.1:5002/detect_logo"/>
+            </StackPanel>
+            <Public:CameraControlWpf Name="cameraControl"  Height="256" Width="394"/>
+      
+     
+            <Image x:Name="Image_Out" Margin="10,10,10,10" Height="256" Width="394"/>
+            
+            <TextBox x:Name="txtblck_msg" Height="150"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

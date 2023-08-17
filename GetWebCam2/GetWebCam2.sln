@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetWebCam2", "GetWebCam2\GetWebCam2.csproj", "{AF2DE065-3D00-411F-8DBD-D02C5462B559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF2DE065-3D00-411F-8DBD-D02C5462B559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2DE065-3D00-411F-8DBD-D02C5462B559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2DE065-3D00-411F-8DBD-D02C5462B559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2DE065-3D00-411F-8DBD-D02C5462B559}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DA24298-5B8E-46ED-B2D6-9834D760928F}
+	EndGlobalSection
+EndGlobal
